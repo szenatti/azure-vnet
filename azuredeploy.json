@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {},
   "variables": {
-    "firstVNETName": "vnet-01",
+    "firstVNETName": "[parameters('firstVNETName')]",
     "firstVNETLocation": "[resourceGroup().location]",
     "firstVNETPrefix": "10.0.0.0/16",
-    "firstVNETFESubnetName": "subnet01",
+    "firstVNETFESubnetName": "[parameters('firstVNETFESubnetName')]",
     "firstVNETFESubnetPrefix": "10.0.1.0/24"
   },
   "resources": [
